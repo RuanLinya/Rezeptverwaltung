@@ -35,7 +35,7 @@ Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-App für 
 ├── src/
 │ ├── app/
 │ │ ├── components/
-│ │ │ ├── home/ → Startseite (Banner + Empfehlungen)
+│ │ │ ├── home/ → Startseite 
 │ │ │ ├── categories/ → Kategorienübersicht
 │ │ │ ├── category/ → Detailansicht einer Kategorie
 │ │ │ ├── recipe/ → Rezeptdetailseite
@@ -57,24 +57,24 @@ Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-App für 
 ```
 
 ### Installation und Ausführung
+
+#### Voraussetzungen
 ```
-### Voraussetzungen
 - Node.js **>=14**
 - Angular CLI **12.x**
 ```
-```
-### Installation
 # Abhängigkeiten installieren
 ```
 npm install
+```
+```
 npm start
 ```
 ###  Weitere Verbindungen
 Die App kann leicht mit einem .NET-Backend verbunden werden.
-Empfohlene Erweiterungen:
 
-REST-API-Integration (Authentifizierung, Rezepte, Kategorien)
+- REST-API-Integration (Authentifizierung, Rezepte, Kategorien)
 
-Persistente Favoriten & Benutzerprofile
+- Persistente Favoriten & Benutzerprofile
 
-Filter & Suchfunktion für Rezepte
+- Filter & Suchfunktion für Rezepte
