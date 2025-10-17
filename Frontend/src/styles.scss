@@ -1,0 +1,53 @@
+
+:root{
+  --bg:#FAEEE7; --card:#FFFFFF; --ink:#40204B; --muted:#7C5A84; --brand:#F58645;
+  --radius:18px; --shadow:0 10px 30px rgba(64,32,75,.08);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0; font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--ink)}
+.container{max-width:1100px; margin:0 auto; padding:24px}
+.navbar{position:sticky; top:0; z-index:10; background:rgba(250,238,231,.7); backdrop-filter: blur(8px); border-bottom:1px solid rgba(0,0,0,.04)}
+.nav-inner{display:flex; align-items:center; justify-content:space-between; gap:16px}
+.brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.5px}
+.brand .dot{width:12px; height:12px; border-radius:999px; background:var(--brand)}
+.nav-links a{text-decoration:none; color:var(--ink); padding:10px 14px; border-radius:12px}
+.nav-links a:hover{background:rgba(0,0,0,.05)}
+.hero-title{font-size:42px; line-height:1.1; margin:24px 0 12px}
+.grid{display:grid; gap:22px}
+.grid.cols-3{grid-template-columns:repeat(3, minmax(0,1fr))}
+.grid.cols-4{grid-template-columns:repeat(4, minmax(0,1fr))}
+.card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; position:relative}
+.category-card{height:280px; position:relative; overflow:hidden}
+.category-card img{width:100%; height:100%; object-fit:cover; display:block; filter:brightness(.8)}
+.category-card .badge{position:absolute; top:14px; left:14px; background:rgba(255,255,255,.85); padding:6px 10px; border-radius:999px; font-size:12px}
+.category-card .label{position:absolute; bottom:12px; left:14px; color:#fff;}
+.category-card .label .small{opacity:.85; font-size:12px}
+.category-card .label .name{font-weight:700; font-size:22px; margin-top:4px}
+.btn{appearance:none; border:0; background:var(--brand); color:#fff; padding:14px 22px; border-radius:14px; font-weight:600; cursor:pointer; box-shadow:0 8px 20px rgba(245,134,69,.35)}
+.btn.ghost{background:transparent; color:var(--ink); box-shadow:none; border:1px solid rgba(0,0,0,.1)}
+.btn.block{display:block; width:100%}
+.form{display:grid; gap:16px; max-width:520px}
+.input, .select{width:100%; padding:14px 16px; border-radius:14px; border:1px solid rgba(0,0,0,.08); background:#F7E8DE; outline:none}
+.helper{color:var(--muted); font-size:13px}
+.section-title{font-size:32px; margin:22px 0 12px}
+.subtitle{color:var(--muted)}
+.list{display:flex; flex-direction:column; gap:12px}
+.list-item{display:flex; align-items:center; justify-content:space-between; background:#FFF; padding:14px 16px; border-radius:14px; box-shadow:var(--shadow)}
+.recipe-hero{display:grid; grid-template-columns:520px 1fr; gap:24px; align-items:start}
+.recipe-hero .cover{border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow)}
+.meta{display:flex; gap:18px; margin:10px 0 16px}
+.meta .pill{background:#FFF; padding:8px 12px; border-radius:999px; box-shadow:var(--shadow); font-size:12px}
+.footer{padding:40px; text-align:center; color:var(--muted)}
+.banner{position:relative; overflow:hidden; border-radius:24px; box-shadow:var(--shadow); background:#FFF}
+.banner img{width:100%; height:360px; object-fit:cover; filter:brightness(.9)}
+.banner .content{position:absolute; inset:0; display:flex; align-items:center; padding:32px; color:#fff; background:linear-gradient(90deg, rgba(0,0,0,.45), rgba(0,0,0,0))}
+.banner .title{font-size:44px; font-weight:700; margin:0 0 8px 0}
+.banner .subtitle{color:#f1e8ff}
+@media (max-width: 900px){
+  .grid.cols-3{grid-template-columns:repeat(2, minmax(0,1fr))}
+  .grid.cols-4{grid-template-columns:repeat(2, minmax(0,1fr))}
+  .recipe-hero{grid-template-columns:1fr}
+  .banner img{height:260px}
+  .banner .title{font-size:32px}
+}
