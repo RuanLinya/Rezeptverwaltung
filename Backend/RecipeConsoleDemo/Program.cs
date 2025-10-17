@@ -8,12 +8,7 @@ using RecipeLibrary.Models;
 namespace RecipeConsoleDemo
 {
     /// <summary>
-    /// A minimalistic console application demonstrating the usage of the
-    /// RecipeLibrary.  The program supports registration, authentication and
-    /// various CRUD operations.  This example is intentionally simple and is
-    /// not designed for production use (e.g. passwords are stored in clear
-    /// text, there is no input validation beyond basic checks and no error
-    /// handling beyond catching exceptions and writing them to the console).
+    /// The program supports registration, authentication and various CRUD operations.
     /// </summary>
     internal class Program
     {
@@ -106,6 +101,8 @@ namespace RecipeConsoleDemo
                     Console.WriteLine("11) Rezept löschen");
                     Console.WriteLine("12) Kategorie umbenennen");
                     Console.WriteLine("13) Kategorie löschen");
+                    Console.WriteLine("14) Rezepte eines Nutzers anzeigen");
+                    Console.WriteLine("15) Alle Zutaten anzeigen");
                     Console.WriteLine("0) Abmelden");
                     Console.Write("Auswahl: ");
                     var input = Console.ReadLine();
@@ -150,6 +147,13 @@ namespace RecipeConsoleDemo
                         case "13":
                             DeleteCategory();
                             break;
+                        case "14":
+                            ListRecipesBySpecificUser();
+                            break;
+                        case "15":
+                            ListAllIngredients();
+                            break;
+;
                         case "0":
                             return;
                         default:
@@ -539,5 +543,47 @@ namespace RecipeConsoleDemo
                 return Console.ReadLine() ?? string.Empty;
             }
         }
+        private static void ListRecipesBySpecificUser()
+        {
+            Console.Write("Benutzername: ");
+            var name = Console.ReadLine()?.Trim();
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                Console.WriteLine("Name darf nicht leer sein.");
+                return;
+            }
+
+            var user = _userService.GetByName(name);
+            if (user == null)
+            {
+                Console.WriteLine($"Benutzer '{name}' wurde nicht gefunden.");
+                return;
+            }
+
+            var recipes = _recipeService.GetByOwner(user.Id).ToList();
+            if (recipes.Count == 0)
+            {
+                Console.WriteLine($"Keine Rezepte von '{name}'.");
+                return;
+            }
+
+            Console.WriteLine($"Rezepte von '{name}':");
+            foreach (var r in recipes)
+                Console.WriteLine($"- {r.Name} ({r.Id})");
+        }
+
+        private static void ListAllIngredients()
+        {
+            var ings = _ingredientService.GetAll().OrderBy(i => i.Name).ToList();
+            if (ings.Count == 0)
+            {
+                Console.WriteLine("Keine Zutaten vorhanden.");
+                return;
+            }
+            Console.WriteLine("Globale Zutatenliste:");
+            foreach (var ing in ings)
+                Console.WriteLine($"- {ing.Name} ({ing.Id})");
+        }
+
     }
 }

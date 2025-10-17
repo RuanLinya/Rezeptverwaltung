@@ -59,5 +59,31 @@
     "CategoryIds": [
       "62661652-ef7d-4a91-85ec-9a6b69521f5a"
     ]
+  },
+  {
+    "Id": "f1bc74f1-cf80-4c74-bed7-1e9c90ac0c35",
+    "Name": "Cookie",
+    "OwnerId": "76c29cea-069d-4935-9f07-879ee83d1693",
+    "Steps": [
+      "Bake cookies",
+      "Snack"
+    ],
+    "Ingredients": [
+      {
+        "IngredientId": "66632ea8-472f-4de4-8bac-9683318eb353",
+        "Amount": "50g"
+      },
+      {
+        "IngredientId": "bb8b2384-c4b3-4c6e-bf88-bd248aef22fa",
+        "Amount": "20g"
+      }
+    ],
+    "CategoryIds": [
+      "c380168b-c95c-4c90-8cd7-c7594b756be4",
+      "311729d2-caa2-41e5-aae8-1dbe9c71bb78",
+      "180f9ca8-dece-4bbc-81cd-33f739f0f879",
+      "efe02725-1cae-4988-983e-631c4f3c6f88",
+      "cf8a2eae-d92e-423d-adff-dccd1a725592"
+    ]
   }
 ]

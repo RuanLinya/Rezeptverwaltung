@@ -1,14 +1,15 @@
+
 1
-Alice
+user1
 pass1
 1
-Bob
+user2
 pass2
 1
-Charlie
+user3
 pass3
 2
-Alice
+user1
 pass1
 1
 Dessert
@@ -18,61 +19,50 @@ Vegetarian
 Flour
 2
 Sugar
-2
-Lettuce
-2
-Tomato
 3
 Cake
 Flour|200g
 Sugar|100g
 
-Mix
-Bake
-
+Mix and bake
 Dessert
 
-3
-Salad
-Lettuce|1 head
-Tomato|2
-
-Chop
-Mix
-
-Vegetarian
-
-5
-Dessert
-5
-Vegetarian
 0
 2
-Bob
+user2
 pass2
 1
 Main
 2
-Chicken
+Oil
+2
+Salt
 3
-Roast Chicken
-Chicken|500g
+Soup
+Oil|10ml
+Salt|5g
 
-Roast
-
+Boil and serve
 Main
 
-7
-1
-9
-8
-1
-9
 0
 2
-Charlie
+user3
 pass3
-7
 1
-0
+Snack
+2
+Chocolate
+3
+Cookie
+Chocolate|50g
+Sugar|20g
+
+Bake cookies
+Snack
+
+14
+user1
+15
+9
 0

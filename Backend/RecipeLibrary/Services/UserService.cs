@@ -60,5 +60,18 @@ namespace RecipeLibrary.Services
         {
             return _context.Users.FirstOrDefault(u => u.Id == id);
         }
+
+     public User? GetByName(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                return null;
+
+            var normalized = name.Trim();
+
+            return _context.Users
+                .FirstOrDefault(u =>
+                    string.Equals(u.UserName, normalized, StringComparison.OrdinalIgnoreCase));
+        }
+
     }
 }
