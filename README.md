@@ -9,13 +9,13 @@ Die Anwendung ist als Lernbeispiel gedacht und speichert Daten in JSON‑Dateien
 - **`RecipeLibrary`** – .NET‑Klassbibliothek mit allen Domänenklassen (Benutzer, Rezept, Zutat, Kategorie), einem Persistenzlayer (`DataContext`) und Serviceklassen für die Verwaltung von Benutzern, Zutaten, Kategorien, Rezepten und Favoriten.
 - **`RecipeConsoleDemo`** – Konsolenanwendung, die die Bibliothek nutzt. Benutzer können sich registrieren und anmelden, Kategorien und Zutaten anlegen, Rezepte erstellen und abfragen sowie fremde Rezepte als Favorit markieren.
 
-### Installation und Ausführung
+### Installation und Ausführung 
 
 #### Voraussetzungen
 Die Projekte sind auf .NET 8 ausgelegt. Stellen Sie sicher, dass ein aktuelles .NET 8 SDK auf Ihrem System installiert ist. 
 Beim ersten Start wird im Unterordner `data` eine Reihe von JSON‑Dateien (`users.json`, `ingredients.json`, `categories.json`, `recipes.json`) erzeugt, in denen die Objekte persistiert werden. Die Daten bleiben zwischen Programmläufen erhalten.
 
-#### Abhängigkeiten installieren
+#### Abhängigkeiten installieren (cd Backend)
 ```bash
 # Wiederherstellen von Abhängigkeiten 
 dotnet restore
@@ -23,17 +23,109 @@ dotnet restore
 # Projekt kompilieren
 dotnet build
 
-# Demoanwendung starten
+# Demoanwendung starten (cd Backend)
 dotnet run --project RecipeConsoleDemo
 ```
+
+#### demo_input.txt
+```bash
 1
+user1
+pass1
+1
+user2
+pass2
+1
+user3
+pass3
+2
+user1
+pass1
+1
+Dessert
+1
+Vegetarian
+2
+Flour
+2
+Sugar
+3
+Cake
+Flour|200g
+Sugar|100g
+
+Mix and bake
+Dessert
+
+0
+2
+user2
+pass2
+1
+Main
+2
+Oil
+2
+Salt
+3
+Soup
+Oil|10ml
+Salt|5g
+
+Boil and serve
+Main
+
+0
+2
+user3
+pass3
+1
+Snack
+2
+Chocolate
+3
+Cookie
+Chocolate|50g
+Sugar|20g
+
+Bake cookies
+Snack
+
+14
+user1
+15
+9
+0
 ```
+
+#### User Interface
+```bash
 Hauptmenü
 1) Benutzer registrieren
 2) Anmelden
 0) Beenden
 ```
-Ein neues Eingabeskript, demo_input.txt, und die dazugehörige Dokumentation wurden hinzugefügt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
+```bash
+Benutzermenü
+1) Kategorie anlegen
+2) Zutat anlegen
+3) Rezept anlegen
+4) Eigene Rezepte anzeigen
+5) Rezepte nach Kategorie anzeigen
+6) Rezepte nach Zutat anzeigen
+7) Rezept favorisieren
+8) Favorisierung entfernen
+9) Eigene Favoriten anzeigen
+10) Rezept bearbeiten
+11) Rezept löschen
+12) Kategorie umbenennen
+13) Kategorie löschen
+14) Rezepte eines Nutzers anzeigen
+15) Alle Zutaten anzeigen
+0) Abmelden
+```
+
+#### 💡OPTION Ein neues Eingabeskript, auto_demo_script.txt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
 ```bash
 # Automatisches Demonstrationsverfahren:
 ## Verwende cmd.exe
@@ -41,7 +133,7 @@ dotnet run --project RecipeConsoleDemo < auto_demo_script.txt
 ## Verwende PowerShell
 Get-Content auto_demo_script.txt | dotnet run --project RecipeConsoleDemo
 ```
-Die Anwendung liest alle erforderlichen Eingaben aus der Datei „demo_input.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
+Die Anwendung liest alle erforderlichen Eingaben aus der Datei „auto_demo_script.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
 
 ### Architekturüberblick
 Die Bibliothek basiert auf einer einfachen Schichtenarchitektur:
@@ -115,7 +207,7 @@ Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-Rezeptver
 - Node.js **>=14**
 - Angular CLI **12.x**
 ```
-# Abhängigkeiten installieren
+# Abhängigkeiten installieren (cd Frontend)
 ```
 npm install
 ```
