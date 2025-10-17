@@ -3,12 +3,6 @@ using System.Collections.Generic;
 
 namespace RecipeLibrary.Models
 {
-    /// <summary>
-    /// Represents a recipe owned by a user.  The recipe contains a globally
-    /// unique name, a set of steps, a list of ingredient usages and a set of
-    /// categories.  The OwnerId property links the recipe back to the user who
-    /// created it.
-    /// </summary>
     public class Recipe
     {
         public Guid Id { get; set; } = Guid.NewGuid();

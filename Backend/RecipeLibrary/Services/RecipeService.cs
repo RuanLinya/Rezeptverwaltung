@@ -6,13 +6,6 @@ using RecipeLibrary.Models;
 
 namespace RecipeLibrary.Services
 {
-    /// <summary>
-    /// Provides operations to create, update, delete and query recipes.  The
-    /// service enforces various business rules such as unique recipe names and
-    /// mandatory steps/ingredients/categories.  It depends on the
-    /// IngredientService and CategoryService to ensure ingredients and
-    /// categories exist.
-    /// </summary>
     public class RecipeService
     {
         private readonly DataContext _context;
@@ -26,12 +19,6 @@ namespace RecipeLibrary.Services
             _categoryService = categoryService;
         }
 
-        /// <summary>
-        /// Creates a new recipe for the specified user.  At least one step,
-        /// ingredient and category are required.  Recipe names are unique
-        /// across all users.  If a specified ingredient does not exist it is
-        /// created automatically; similarly categories are created if they do
-        /// not already exist.
         /// </summary>
         /// <param name="ownerId">Id of the user creating the recipe.</param>
         /// <param name="name">Unique name of the recipe.</param>
@@ -101,12 +88,6 @@ namespace RecipeLibrary.Services
             _context.SaveChanges();
             return recipe;
         }
-
-        /// <summary>
-        /// Updates an existing recipe by replacing its name, ingredients, steps
-        /// and categories.  The same validation rules apply as for creation.
-        /// Throws if the recipe does not exist or if any validation fails.
-        /// </summary>
         public void Update(Guid recipeId,
                            string newName,
                            IEnumerable<(string ingredientName, string amount)> ingredients,
@@ -208,12 +189,6 @@ namespace RecipeLibrary.Services
         {
             return _context.Recipes.FirstOrDefault(r => r.Id == id);
         }
-
-        /// <summary>
-        /// Returns all recipes in the system.  This is useful for listing all
-        /// recipes on a front‑end.  Use specific query methods to filter by
-        /// owner, category or ingredient when appropriate.
-        /// </summary>
         public IEnumerable<Recipe> GetAll()
         {
             return _context.Recipes;

@@ -1,89 +1,85 @@
 [
   {
-    "Id": "bd9ab404-494a-4411-89ef-3fbebc6880e9",
+    "Id": "43b29052-0681-451b-aee4-189a6baa9e62",
     "Name": "Cake",
-    "OwnerId": "5de8c360-abe7-452c-a249-165c06da202f",
+    "OwnerId": "39e1bb51-bd00-4ef8-b46a-f00dc2715461",
     "Steps": [
-      "Mix",
-      "Bake"
+      "Mix and bake",
+      "Dessert"
     ],
     "Ingredients": [
       {
-        "IngredientId": "51579ff1-bf4d-487e-b5b4-758efacf6495",
+        "IngredientId": "dd91a86d-4099-47cc-ba9a-c91aa9779538",
         "Amount": "200g"
       },
       {
-        "IngredientId": "bb8b2384-c4b3-4c6e-bf88-bd248aef22fa",
+        "IngredientId": "f71b83cb-f235-4fcf-8b0d-7e6450249eb0",
         "Amount": "100g"
       }
     ],
     "CategoryIds": [
-      "cebc9659-33d3-480d-8151-7c10a1b24279"
+      "ed74c1d1-492a-4277-9ffd-c06405759538",
+      "df15311d-2ec7-41ff-a558-d225e8757042",
+      "fe49c4fa-803d-4d67-ae5a-328f524a252f",
+      "5779067a-edbd-4a1e-980c-d3557e7299e8",
+      "d38ea3d0-2df1-47d8-857f-44bc1c393525",
+      "8c733536-fcea-46ff-96f6-ed01488edb6d",
+      "df15311d-2ec7-41ff-a558-d225e8757042",
+      "24d3aac0-e947-4d91-8d4d-9bc2b73e0dec",
+      "df15311d-2ec7-41ff-a558-d225e8757042",
+      "8d934e56-c2b9-4594-932a-d1b08c655964",
+      "0536f146-fc7e-4b10-b8e8-d349f864952b",
+      "9bb55ca8-290d-4deb-a61b-dd850cfc2f37",
+      "e0cafc01-f48f-41d4-8644-2879d762d4f1",
+      "628730ef-97cf-44ba-b55e-a5f2ef55029f"
     ]
   },
   {
-    "Id": "26d377a9-3585-45b3-92ea-caed3a79cafe",
-    "Name": "Salad",
-    "OwnerId": "5de8c360-abe7-452c-a249-165c06da202f",
-    "Steps": [
-      "Chop",
-      "Mix"
-    ],
-    "Ingredients": [
-      {
-        "IngredientId": "0eac5431-e1aa-4eb3-bd1a-00773bea70ae",
-        "Amount": "1 head"
-      },
-      {
-        "IngredientId": "75ac47f7-3816-44bd-a32f-0e486ad37076",
-        "Amount": "2"
-      }
-    ],
-    "CategoryIds": [
-      "e8dce5ee-0a83-40e6-b589-0bca1eb3ac7f"
-    ]
-  },
-  {
-    "Id": "11669550-e855-4709-8599-dce273c45717",
-    "Name": "Roast Chicken",
-    "OwnerId": "57ee49a4-94d6-4b6c-b90a-a451c4633ddd",
-    "Steps": [
-      "Roast"
-    ],
-    "Ingredients": [
-      {
-        "IngredientId": "d8f3bd00-5223-4fb4-8990-9a7dc5d2e837",
-        "Amount": "500g"
-      }
-    ],
-    "CategoryIds": [
-      "62661652-ef7d-4a91-85ec-9a6b69521f5a"
-    ]
-  },
-  {
-    "Id": "f1bc74f1-cf80-4c74-bed7-1e9c90ac0c35",
+    "Id": "999fc011-35e6-4a0d-a1a0-37eab6a17734",
     "Name": "Cookie",
-    "OwnerId": "76c29cea-069d-4935-9f07-879ee83d1693",
+    "OwnerId": "0395c87c-9ac2-460b-90f9-d123f9ac0d03",
     "Steps": [
       "Bake cookies",
       "Snack"
     ],
     "Ingredients": [
       {
-        "IngredientId": "66632ea8-472f-4de4-8bac-9683318eb353",
+        "IngredientId": "687f03f1-59b7-4906-a4a6-570322f58b5a",
         "Amount": "50g"
       },
       {
-        "IngredientId": "bb8b2384-c4b3-4c6e-bf88-bd248aef22fa",
+        "IngredientId": "f71b83cb-f235-4fcf-8b0d-7e6450249eb0",
         "Amount": "20g"
       }
     ],
     "CategoryIds": [
-      "c380168b-c95c-4c90-8cd7-c7594b756be4",
-      "311729d2-caa2-41e5-aae8-1dbe9c71bb78",
-      "180f9ca8-dece-4bbc-81cd-33f739f0f879",
-      "efe02725-1cae-4988-983e-631c4f3c6f88",
-      "cf8a2eae-d92e-423d-adff-dccd1a725592"
+      "15560ae9-a2ac-457f-b550-a60153673b38",
+      "252d51b4-2173-4a62-bf92-b6c32e38c8b1",
+      "2c69cbda-3f47-4a16-bee2-92afd164fb54",
+      "fca1853b-db16-4f9a-936a-b11fbeccb707",
+      "ed74c1d1-492a-4277-9ffd-c06405759538"
+    ]
+  },
+  {
+    "Id": "43c5aef6-ea3b-48d6-95df-a343075d9352",
+    "Name": "Soup",
+    "OwnerId": "6e0c2d80-c0fc-422b-b639-7dad7eb24858",
+    "Steps": [
+      "Boil and serve",
+      "Main"
+    ],
+    "Ingredients": [
+      {
+        "IngredientId": "ed39f6ad-3862-469b-b1a2-c934a4c963ff",
+        "Amount": "10ml"
+      },
+      {
+        "IngredientId": "c9f5b8a4-fb03-4098-b3b6-c8a70327aa64",
+        "Amount": "5g"
+      }
+    ],
+    "CategoryIds": [
+      "ed74c1d1-492a-4277-9ffd-c06405759538"
     ]
   }
 ]

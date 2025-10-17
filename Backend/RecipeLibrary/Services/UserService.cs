@@ -6,8 +6,7 @@ using RecipeLibrary.Models;
 namespace RecipeLibrary.Services
 {
     /// <summary>
-    /// Provides functionality to manage users including registration and
-    /// authentication.  User names are unique across the system.
+    /// Provides functionality to manage users including registration and authentication.  User names are unique across the system.
     /// </summary>
     public class UserService
     {
@@ -19,8 +18,7 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Registers a new user.  Throws an exception if the user name is
-        /// already taken or if any argument is null or empty.
+        /// Registers a new user.
         /// </summary>
         public User Register(string userName, string password)
         {
@@ -43,8 +41,7 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Attempts to authenticate a user with the provided credentials.  If
-        /// successful the matching User instance is returned; otherwise null.
+        /// Attempts to authenticate a user with the provided credentials.
         /// </summary>
         public User? Authenticate(string userName, string password)
         {
@@ -53,8 +50,7 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Retrieves a user by their unique identifier.  Returns null if not
-        /// found.
+        /// Retrieves a user by their unique identifier.  
         /// </summary>
         public User? GetById(Guid id)
         {

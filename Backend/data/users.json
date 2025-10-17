@@ -1,28 +1,20 @@
 [
   {
-    "Id": "5de8c360-abe7-452c-a249-165c06da202f",
+    "Id": "39e1bb51-bd00-4ef8-b46a-f00dc2715461",
     "UserName": "user1",
     "Password": "pass1",
     "FavouriteRecipeIds": []
   },
   {
-    "Id": "57ee49a4-94d6-4b6c-b90a-a451c4633ddd",
+    "Id": "6e0c2d80-c0fc-422b-b639-7dad7eb24858",
     "UserName": "user2",
     "Password": "pass2",
     "FavouriteRecipeIds": []
   },
   {
-    "Id": "76c29cea-069d-4935-9f07-879ee83d1693",
+    "Id": "0395c87c-9ac2-460b-90f9-d123f9ac0d03",
     "UserName": "user3",
     "Password": "pass3",
-    "FavouriteRecipeIds": [
-      "bd9ab404-494a-4411-89ef-3fbebc6880e9"
-    ]
-  },
-  {
-    "Id": "38004cc1-7db8-404c-a5ec-aefe43449646",
-    "UserName": "LINYA",
-    "Password": "123",
     "FavouriteRecipeIds": []
   }
 ]

@@ -3,26 +3,17 @@ using System.Collections.Generic;
 
 namespace RecipeLibrary.Models
 {
-    /// <summary>
-    /// Represents a user of the recipe system.  Each user has a globally unique
-    /// identifier and a user‑supplied name.  For simplicity this example stores
-    /// the password in clear text.  In a real system you should use a secure
-    /// hashing algorithm such as PBKDF2, bcrypt or Argon2 to store password
-    /// hashes instead of plain text passwords.
-    /// </summary>
     public class User
     {
         public Guid Id { get; set; } = Guid.NewGuid();
 
         /// <summary>
-        /// A unique username chosen by the user.  The library enforces
-        /// uniqueness across all registered users.
+        /// A unique username chosen by the user.
         /// </summary>
         public string UserName { get; set; } = string.Empty;
 
         /// <summary>
-        /// A plain text password.  This sample uses clear text for brevity but
-        /// this should never be done in a production environment.
+        /// A plain text password.
         /// </summary>
         public string Password { get; set; } = string.Empty;
 

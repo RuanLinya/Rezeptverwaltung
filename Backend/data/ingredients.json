@@ -1,26 +1,22 @@
 [
   {
-    "Id": "51579ff1-bf4d-487e-b5b4-758efacf6495",
+    "Id": "dd91a86d-4099-47cc-ba9a-c91aa9779538",
     "Name": "Flour"
   },
   {
-    "Id": "bb8b2384-c4b3-4c6e-bf88-bd248aef22fa",
+    "Id": "f71b83cb-f235-4fcf-8b0d-7e6450249eb0",
     "Name": "Sugar"
   },
   {
-    "Id": "0eac5431-e1aa-4eb3-bd1a-00773bea70ae",
-    "Name": "Lettuce"
-  },
-  {
-    "Id": "75ac47f7-3816-44bd-a32f-0e486ad37076",
-    "Name": "Tomato"
-  },
-  {
-    "Id": "d8f3bd00-5223-4fb4-8990-9a7dc5d2e837",
-    "Name": "Chicken"
-  },
-  {
-    "Id": "66632ea8-472f-4de4-8bac-9683318eb353",
+    "Id": "687f03f1-59b7-4906-a4a6-570322f58b5a",
     "Name": "Chocolate"
+  },
+  {
+    "Id": "ed39f6ad-3862-469b-b1a2-c934a4c963ff",
+    "Name": "Oil"
+  },
+  {
+    "Id": "c9f5b8a4-fb03-4098-b3b6-c8a70327aa64",
+    "Name": "Salt"
   }
 ]
