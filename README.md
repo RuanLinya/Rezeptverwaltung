@@ -2,12 +2,55 @@
 
 
 ## Backend
+Dies ist ein **Backend-Prototyp** eine einfache **.NET 8 Bibliothek** zur Verwaltung von Benutzern und Rezepten sowie eine kleine Konsolenanwendung zur Demonstration der Bibliotheksfunktionen. 
+Die Anwendung ist als Lernbeispiel gedacht und speichert Daten in JSON‑Dateien im Verzeichnis `data`.
 
+####  Projektstruktur
+- **`RecipeLibrary`** – .NET‑Klassbibliothek mit allen Domänenklassen (Benutzer, Rezept, Zutat, Kategorie), einem Persistenzlayer (`DataContext`) und Serviceklassen für die Verwaltung von Benutzern, Zutaten, Kategorien, Rezepten und Favoriten.
+- **`RecipeConsoleDemo`** – Konsolenanwendung, die die Bibliothek nutzt. Benutzer können sich registrieren und anmelden, Kategorien und Zutaten anlegen, Rezepte erstellen und abfragen sowie fremde Rezepte als Favorit markieren.
 
 ### Installation und Ausführung
 
+#### Voraussetzungen
+Die Projekte sind auf .NET 8 ausgelegt. Stellen Sie sicher, dass ein aktuelles .NET 8 SDK auf Ihrem System installiert ist. 
+Beim ersten Start wird im Unterordner `data` eine Reihe von JSON‑Dateien (`users.json`, `ingredients.json`, `categories.json`, `recipes.json`) erzeugt, in denen die Objekte persistiert werden. Die Daten bleiben zwischen Programmläufen erhalten.
+
+#### Abhängigkeiten installieren
+```bash
+# Wiederherstellen von Abhängigkeiten 
+dotnet restore
+
+# Projekt kompilieren
+dotnet build
+
+# Demoanwendung starten
+dotnet run --project RecipeConsoleDemo
+```
+
+
 
 ### Architekturüberblick
+Die Bibliothek basiert auf einer einfachen Schichtenarchitektur:
+
+| Schicht | Aufgabe |
+| --- | --- |
+| **Modelle** | Klassen zur Darstellung von Benutzern (`User`), Rezepten (`Recipe`), Zutaten (`Ingredient`), Kategorien (`Category`) und der Verwendung von Zutaten in einem Rezept (`IngredientUsage`). |
+| **Persistenz** | `DataContext` lädt die JSON‑Dateien beim Programmstart und speichert Änderungen. |
+| **Services** | Serviceklassen kapseln die Geschäftslogik: `UserService` (Registrierung/Authentifizierung), `IngredientService`, `CategoryService`, `RecipeService` (CRUD für Rezepte samt Validierung) und `FavouriteService` (Verwalten von Favoriten). |
+| **Demo** | Das Konsolenprogramm stellt ein Menü bereit, über das ein Anwender die verschiedenen Funktionen nutzen kann. |
+
+### Persistenzmechanismus
+
+Die Persistenz erfolgt mittels `System.Text.Json`. Beim Instanziieren des `DataContext` wird pro Sammlung (Benutzer, Zutaten, Kategorien, Rezepte) die entsprechende JSON‑Datei geladen. Änderungen an den Objekten werden über den Aufruf von `SaveChanges()` gespeichert. Die Dateiablage ist bewusst einfach gehalten, um die Konzentration auf die fachliche Logik zu ermöglichen.
+
+### Eingabebeschränkungen und Geschäftsregeln
+
+Die Bibliothek setzt folgende Regeln durch:
+
+- **Benutzerverwaltung**: Benutzername muss eindeutig sein. Passwörter werden unverschlüsselt gespeichert (nur für Demonstrationszwecke!).
+- **Rezeptverwaltung**: Rezeptnamen sind global eindeutig. Ein Rezept muss mindestens eine Zutat, mindestens einen Zubereitungsschritt und mindestens eine Kategorie besitzen.
+- **Zutaten** und **Kategorien**: Namen müssen eindeutig sein. Zutaten sind global und unabhängig vom Benutzer. Kategorien können nicht gelöscht werden, wenn sie von einem Rezept verwendet werden.
+- **Favoriten**: Benutzer dürfen nur Rezepte anderer Benutzer als Favorit markieren. Favoriten werden als Liste von Rezept‑IDs beim jeweiligen Benutzer gespeichert.
 
 
 ## Frontend
