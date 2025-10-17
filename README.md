@@ -3,7 +3,7 @@
 
 ## 🟦 Backend (Aufgabe)
 Dies ist ein **Backend-Prototyp** eine einfache **.NET 8 Bibliothek** zur Verwaltung von Benutzern und Rezepten sowie eine kleine Konsolenanwendung zur Demonstration der Bibliotheksfunktionen. 
-Die Anwendung ist als Lernbeispiel gedacht und speichert Daten in JSON‑Dateien im Verzeichnis `data`.
+Die Anwendung speichert Daten in JSON‑Dateien im Verzeichnis `data`.
 
 ####  Projektstruktur
 - **`RecipeLibrary`** – .NET‑Klassbibliothek mit allen Domänenklassen (Benutzer, Rezept, Zutat, Kategorie), einem Persistenzlayer (`DataContext`) und Serviceklassen für die Verwaltung von Benutzern, Zutaten, Kategorien, Rezepten und Favoriten.
