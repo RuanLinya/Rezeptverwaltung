@@ -1,7 +1,7 @@
 # Rezeptverwaltung 
 
 
-## Backend
+## 🟦 Backend (Aufgabe)
 Dies ist ein **Backend-Prototyp** eine einfache **.NET 8 Bibliothek** zur Verwaltung von Benutzern und Rezepten sowie eine kleine Konsolenanwendung zur Demonstration der Bibliotheksfunktionen. 
 Die Anwendung ist als Lernbeispiel gedacht und speichert Daten in JSON‑Dateien im Verzeichnis `data`.
 
@@ -125,7 +125,8 @@ Benutzermenü
 0) Abmelden
 ```
 
-#### 💡OPTION Ein neues Eingabeskript, auto_demo_script.txt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
+#### 💡Option
+##### Ein neues Eingabeskript, auto_demo_script.txt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
 ```bash
 # Automatisches Demonstrationsverfahren:
 ## Verwende cmd.exe
@@ -159,7 +160,7 @@ Die Bibliothek setzt folgende Regeln durch:
 - **Favoriten**: Benutzer dürfen nur Rezepte anderer Benutzer als Favorit markieren. Favoriten werden als Liste von Rezept‑IDs beim jeweiligen Benutzer gespeichert.
 
 
-## Frontend
+## 🟩 Frontend (In Bearbeitung)
 Dies ist ein **Frontend-Prototyp** für eine Rezeptverwaltungsanwendung, entwickelt mit **Angular 12**.  
 Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-Rezeptverwaltung.
 - Login & Registrierung
@@ -233,3 +234,5 @@ Die App kann leicht mit einem .NET-Backend verbunden werden.
 - Persistente Favoriten & Benutzerprofile
 
 - Filter & Suchfunktion für Rezepte
+
+## 🟧 DevOps (In Bearbeitung)
