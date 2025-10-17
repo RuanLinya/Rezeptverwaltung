@@ -133,7 +133,7 @@ dotnet run --project RecipeConsoleDemo < auto_demo_script.txt
 ## Verwende PowerShell
 Get-Content auto_demo_script.txt | dotnet run --project RecipeConsoleDemo
 ```
-Die Anwendung liest alle erforderlichen Eingaben aus der Datei „demo_input.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
+Die Anwendung liest alle erforderlichen Eingaben aus der Datei „auto_demo_script.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
 
 ### Architekturüberblick
 Die Bibliothek basiert auf einer einfachen Schichtenarchitektur:
