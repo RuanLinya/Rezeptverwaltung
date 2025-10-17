@@ -127,6 +127,8 @@ Benutzermenü
 
 #### 💡Option
 ##### Ein neues Eingabeskript, auto_demo_script.txt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
+Die Anwendung liest alle erforderlichen Eingaben aus der Datei „auto_demo_script.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
+
 ```bash
 # Automatisches Demonstrationsverfahren:
 ## Verwende cmd.exe
@@ -134,7 +136,6 @@ dotnet run --project RecipeConsoleDemo < auto_demo_script.txt
 ## Verwende PowerShell
 Get-Content auto_demo_script.txt | dotnet run --project RecipeConsoleDemo
 ```
-Die Anwendung liest alle erforderlichen Eingaben aus der Datei „auto_demo_script.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
 
 ### Architekturüberblick
 Die Bibliothek basiert auf einer einfachen Schichtenarchitektur:
