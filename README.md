@@ -95,12 +95,32 @@ user1
 9
 0
 ```
-```
+```bash
 Hauptmenü
 1) Benutzer registrieren
 2) Anmelden
 0) Beenden
 ```
+```bash
+Benutzermenü
+1) Kategorie anlegen
+2) Zutat anlegen
+3) Rezept anlegen
+4) Eigene Rezepte anzeigen
+5) Rezepte nach Kategorie anzeigen
+6) Rezepte nach Zutat anzeigen
+7) Rezept favorisieren
+8) Favorisierung entfernen
+9) Eigene Favoriten anzeigen
+10) Rezept bearbeiten
+11) Rezept löschen
+12) Kategorie umbenennen
+13) Kategorie löschen
+14) Rezepte eines Nutzers anzeigen
+15) Alle Zutaten anzeigen
+0) Abmelden
+```
+```bash
 Ein neues Eingabeskript, demo_input.txt, und die dazugehörige Dokumentation wurden hinzugefügt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
 ```bash
 # Automatisches Demonstrationsverfahren:
