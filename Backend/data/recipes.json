@@ -1,0 +1,63 @@
+[
+  {
+    "Id": "bd9ab404-494a-4411-89ef-3fbebc6880e9",
+    "Name": "Cake",
+    "OwnerId": "5de8c360-abe7-452c-a249-165c06da202f",
+    "Steps": [
+      "Mix",
+      "Bake"
+    ],
+    "Ingredients": [
+      {
+        "IngredientId": "51579ff1-bf4d-487e-b5b4-758efacf6495",
+        "Amount": "200g"
+      },
+      {
+        "IngredientId": "bb8b2384-c4b3-4c6e-bf88-bd248aef22fa",
+        "Amount": "100g"
+      }
+    ],
+    "CategoryIds": [
+      "cebc9659-33d3-480d-8151-7c10a1b24279"
+    ]
+  },
+  {
+    "Id": "26d377a9-3585-45b3-92ea-caed3a79cafe",
+    "Name": "Salad",
+    "OwnerId": "5de8c360-abe7-452c-a249-165c06da202f",
+    "Steps": [
+      "Chop",
+      "Mix"
+    ],
+    "Ingredients": [
+      {
+        "IngredientId": "0eac5431-e1aa-4eb3-bd1a-00773bea70ae",
+        "Amount": "1 head"
+      },
+      {
+        "IngredientId": "75ac47f7-3816-44bd-a32f-0e486ad37076",
+        "Amount": "2"
+      }
+    ],
+    "CategoryIds": [
+      "e8dce5ee-0a83-40e6-b589-0bca1eb3ac7f"
+    ]
+  },
+  {
+    "Id": "11669550-e855-4709-8599-dce273c45717",
+    "Name": "Roast Chicken",
+    "OwnerId": "57ee49a4-94d6-4b6c-b90a-a451c4633ddd",
+    "Steps": [
+      "Roast"
+    ],
+    "Ingredients": [
+      {
+        "IngredientId": "d8f3bd00-5223-4fb4-8990-9a7dc5d2e837",
+        "Amount": "500g"
+      }
+    ],
+    "CategoryIds": [
+      "62661652-ef7d-4a91-85ec-9a6b69521f5a"
+    ]
+  }
+]

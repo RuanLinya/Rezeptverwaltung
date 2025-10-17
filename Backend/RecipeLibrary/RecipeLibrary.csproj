@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- The library targets .NET 6.0. Feel free to bump the version if a newer LTS is available. -->
+    <!-- Updated to target .NET 8.0 per user request -->
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- Generate a deterministic assembly name based on the project file name. -->
+    <AssemblyName>RecipeLibrary</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- System.Text.Json is part of the base class library, no explicit package reference required. -->
+  </ItemGroup>
+
+</Project>

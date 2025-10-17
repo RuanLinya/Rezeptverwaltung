@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "51579ff1-bf4d-487e-b5b4-758efacf6495",
+    "Name": "Flour"
+  },
+  {
+    "Id": "bb8b2384-c4b3-4c6e-bf88-bd248aef22fa",
+    "Name": "Sugar"
+  },
+  {
+    "Id": "0eac5431-e1aa-4eb3-bd1a-00773bea70ae",
+    "Name": "Lettuce"
+  },
+  {
+    "Id": "75ac47f7-3816-44bd-a32f-0e486ad37076",
+    "Name": "Tomato"
+  },
+  {
+    "Id": "d8f3bd00-5223-4fb4-8990-9a7dc5d2e837",
+    "Name": "Chicken"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "5de8c360-abe7-452c-a249-165c06da202f",
+    "UserName": "Alice",
+    "Password": "pass1",
+    "FavouriteRecipeIds": []
+  },
+  {
+    "Id": "57ee49a4-94d6-4b6c-b90a-a451c4633ddd",
+    "UserName": "Bob",
+    "Password": "pass2",
+    "FavouriteRecipeIds": []
+  },
+  {
+    "Id": "76c29cea-069d-4935-9f07-879ee83d1693",
+    "UserName": "Charlie",
+    "Password": "pass3",
+    "FavouriteRecipeIds": [
+      "bd9ab404-494a-4411-89ef-3fbebc6880e9"
+    ]
+  }
+]

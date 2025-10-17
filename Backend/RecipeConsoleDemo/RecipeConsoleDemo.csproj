@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- Updated to target .NET 8.0 per user request -->
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>RecipeConsoleDemo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../RecipeLibrary/RecipeLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
