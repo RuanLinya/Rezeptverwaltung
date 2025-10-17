@@ -26,7 +26,75 @@ dotnet build
 # Demoanwendung starten
 dotnet run --project RecipeConsoleDemo
 ```
+```bash
 1
+user1
+pass1
+1
+user2
+pass2
+1
+user3
+pass3
+2
+user1
+pass1
+1
+Dessert
+1
+Vegetarian
+2
+Flour
+2
+Sugar
+3
+Cake
+Flour|200g
+Sugar|100g
+
+Mix and bake
+Dessert
+
+0
+2
+user2
+pass2
+1
+Main
+2
+Oil
+2
+Salt
+3
+Soup
+Oil|10ml
+Salt|5g
+
+Boil and serve
+Main
+
+0
+2
+user3
+pass3
+1
+Snack
+2
+Chocolate
+3
+Cookie
+Chocolate|50g
+Sugar|20g
+
+Bake cookies
+Snack
+
+14
+user1
+15
+9
+0
+```
 ```
 Hauptmenü
 1) Benutzer registrieren
