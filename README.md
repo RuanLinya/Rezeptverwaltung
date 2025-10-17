@@ -26,8 +26,19 @@ dotnet build
 # Demoanwendung starten
 dotnet run --project RecipeConsoleDemo
 ```
-
-
+1
+```
+Hauptmenü
+1) Benutzer registrieren
+2) Anmelden
+0) Beenden
+```
+Ein neues Eingabeskript, demo_input.txt, und die dazugehörige Dokumentation wurden hinzugefügt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
+```bash
+# Automatisches Demonstrationsverfahren:
+dotnet run --project RecipeConsoleDemo < auto_demo_script.txt
+```
+Die Anwendung liest alle erforderlichen Eingaben aus der Datei „demo_input.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
 
 ### Architekturüberblick
 Die Bibliothek basiert auf einer einfachen Schichtenarchitektur:
