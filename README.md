@@ -22,12 +22,9 @@ Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-App für 
 - Rezepte anzeigen, hinzufügen und durchsuchen
 - Detailseite mit Zutaten und Zubereitungsschritten
 - Rezepte mit Kategorien und Zutaten verknüpft
-
-#### 🗂️ Kategorien
 - Übersicht aller Rezeptkategorien
 - Detailseite pro Kategorie mit zugehörigen Rezepten
-
-#### 💡 Weitere Features
+💡 Weitere Features
 - Folgeliste mit anderen Benutzern
 
 ####  Projektstruktur
