@@ -9,13 +9,13 @@ Die Anwendung ist als Lernbeispiel gedacht und speichert Daten in JSON‑Dateien
 - **`RecipeLibrary`** – .NET‑Klassbibliothek mit allen Domänenklassen (Benutzer, Rezept, Zutat, Kategorie), einem Persistenzlayer (`DataContext`) und Serviceklassen für die Verwaltung von Benutzern, Zutaten, Kategorien, Rezepten und Favoriten.
 - **`RecipeConsoleDemo`** – Konsolenanwendung, die die Bibliothek nutzt. Benutzer können sich registrieren und anmelden, Kategorien und Zutaten anlegen, Rezepte erstellen und abfragen sowie fremde Rezepte als Favorit markieren.
 
-### Installation und Ausführung
+### Installation und Ausführung 
 
 #### Voraussetzungen
 Die Projekte sind auf .NET 8 ausgelegt. Stellen Sie sicher, dass ein aktuelles .NET 8 SDK auf Ihrem System installiert ist. 
 Beim ersten Start wird im Unterordner `data` eine Reihe von JSON‑Dateien (`users.json`, `ingredients.json`, `categories.json`, `recipes.json`) erzeugt, in denen die Objekte persistiert werden. Die Daten bleiben zwischen Programmläufen erhalten.
 
-#### Abhängigkeiten installieren
+#### Abhängigkeiten installieren (cd Backend)
 ```bash
 # Wiederherstellen von Abhängigkeiten 
 dotnet restore
@@ -23,7 +23,7 @@ dotnet restore
 # Projekt kompilieren
 dotnet build
 
-# Demoanwendung starten
+# Demoanwendung starten (cd Backend)
 dotnet run --project RecipeConsoleDemo
 ```
 
@@ -205,7 +205,7 @@ Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-Rezeptver
 - Node.js **>=14**
 - Angular CLI **12.x**
 ```
-# Abhängigkeiten installieren
+# Abhängigkeiten installieren (cd Frontend)
 ```
 npm install
 ```
