@@ -97,6 +97,8 @@ user1
 9
 0
 ```
+
+#### User Interface
 ```bash
 Hauptmenü
 1) Benutzer registrieren
@@ -122,8 +124,8 @@ Benutzermenü
 15) Alle Zutaten anzeigen
 0) Abmelden
 ```
-```bash
-Ein neues Eingabeskript, demo_input.txt, und die dazugehörige Dokumentation wurden hinzugefügt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
+
+#### 💡OPTION Ein neues Eingabeskript, auto_demo_script.txt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
 ```bash
 # Automatisches Demonstrationsverfahren:
 ## Verwende cmd.exe
