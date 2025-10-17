@@ -12,10 +12,8 @@
 
 ## Frontend
 Dies ist ein **Frontend-Prototyp** für eine Rezeptverwaltungsanwendung, entwickelt mit **Angular 12**.  
-Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-App für Benutzer-, Kategorien- und Rezeptverwaltung.
-
-
-- Login & Registrierung (Demo-Formulare)
+Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-Rezeptverwaltung.
+- Login & Registrierung
 - Benutzerprofilseite mit Rezeptübersicht
 
 ### Rezeptverwaltung Funktionen
