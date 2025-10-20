@@ -4,7 +4,7 @@ Angular 12 (Frontend)
    ↓
 ASP.NET Core Web API (Zwischenschicht)
    ↓
-DataContext + JSON 文件 (Datenschicht)
+DataContext + JSON (Datenschicht)
 ```
 
 ## 🟦 Backend (Aufgabe)
