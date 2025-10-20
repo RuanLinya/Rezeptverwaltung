@@ -1,5 +1,11 @@
 # Rezeptverwaltung 
-
+```bash
+Angular 12 (Frontend)
+   ↓
+ASP.NET Core Web API (Zwischenschicht)
+   ↓
+DataContext + JSON 文件 (Datenschicht)
+```
 
 ## 🟦 Backend (Aufgabe)
 Dies ist ein **Backend-Prototyp** eine einfache **.NET 8 Bibliothek** zur Verwaltung von Benutzern und Rezepten sowie eine kleine Konsolenanwendung zur Demonstration der Bibliotheksfunktionen. 
