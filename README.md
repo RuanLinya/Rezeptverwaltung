@@ -32,7 +32,12 @@ dotnet build
 # Demoanwendung starten (cd Backend)
 dotnet run --project RecipeConsoleDemo
 ```
-
+```bash
+═══════════════════════════════════════════════
+ Willkommen zum Rezeptverwaltungs-Demo!
+═══════════════════════════════════════════════
+Automatischer Testmodus starten? (J/N): N
+```
 #### demo_input.txt
 ```bash
 1
@@ -149,10 +154,15 @@ Benutzermenü
 15) Alle Zutaten anzeigen
 0) Abmelden
 ```
-
 #### 💡Option
-##### Ein neues Eingabeskript, auto_demo_script.txt. Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
-Die Anwendung liest alle erforderlichen Eingaben aus der Datei „auto_demo_script.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
+```bash
+═══════════════════════════════════════════════
+ Willkommen zum Rezeptverwaltungs-Demo!
+═══════════════════════════════════════════════
+Automatischer Testmodus starten? (J/N): J
+```
+##### Ein neues Eingabeskript, AutoTestProgram.cs Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
+Die Anwendung liest alle erforderlichen Eingaben aus der Datei „demo_script.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
 
 ```bash
 # Automatisches Demonstrationsverfahren:
@@ -161,6 +171,97 @@ dotnet run --project RecipeConsoleDemo < auto_demo_script.txt
 ## Verwende PowerShell
 Get-Content auto_demo_script.txt | dotnet run --project RecipeConsoleDemo
 ```
+```bash
+═══════════════════════════════════════════
+  Automatisierte Funktionstests gestartet
+═══════════════════════════════════════════
+✔ Angemeldet als user1
+
+═══════════════════
+  Kategorie-Tests
+═══════════════════
+✔ 3 Kategorien erstellt.
+
+═════════════════
+  Zutaten-Tests
+═════════════════
+✔ 5 Zutaten hinzugefügt.
+
+════════════════
+  Rezept-Tests
+════════════════
+✔ Rezept 'Pfannkuchen' erstellt.
+✔ 2. Rezept 'Toastbrot' erstellt.
+
+════════════════════════════
+  Eigene Rezepte von user1
+════════════════════════════
+┌─────────────┬─────────┐
+│ Pfannkuchen │ Dessert │
+│ Toastbrot   │ Vegan   │
+└─────────────┴─────────┘
+
+═══════════════════
+  Favoriten-Tests
+═══════════════════
+✔ 'Pizza' favorisiert.
+┌───────┬───────┐
+│ Pizza │ user2 │
+└───────┴───────┘
+✔ 'Pizza' wieder entfernt.
+
+══════════════════════
+  Rezept-Bearbeitung
+══════════════════════
+✔ Rezept 'Pfannkuchen (neu)' umbenannt zu 'Pfannkuchen (neu) (neu)'.
+✔ Rezept 'Toastbrot' gelöscht.
+
+═════════════════════════════════════════
+  Kategorie-Tests: Umbenennen & Löschen
+═════════════════════════════════════════
+✔ Kategorie 'Dessert (neu)' umbenannt zu 'Dessert (neu) (neu)'.
+✔ Keine unbenutzten Kategorien zum Löschen gefunden – übersprungen.
+
+════════════════════════════════
+  Automatische Zusammenfassung
+════════════════════════════════
+
+ Benutzer:
+┌───────┬──────────────────────────────────────┐
+│ user1 │ af47a394-8330-4133-b9d3-c999a3a59ca0 │
+│ user2 │ 32b6b781-78cc-4e78-aa3e-b3a657511400 │
+└───────┴──────────────────────────────────────┘
+
+ Kategorien:
+┌───────────────┬──────────────────────────────────────┐
+│ Dessert (neu) │ 9b943b57-ec95-4662-badf-72e32235c825 │
+│ Vegan         │ 33169b4f-5d13-4567-a3d7-c655a7bf26e3 │
+│ Fastfood      │ d68939c5-c8af-4606-91a7-2f592f80c5cb │
+└───────────────┴──────────────────────────────────────┘
+
+ Zutaten:
+┌────────┬──────────────────────────────────────┐
+│ Zucker │ f42bd94a-af69-43cf-bb59-e06761dcd947 │
+│ Mehl   │ 062e2b4f-1240-4df5-8dd7-a5f87366207b │
+│ Milch  │ bf998cbd-d6e1-409a-8833-3a80f3118fcb │
+│ Eier   │ 66a816ee-5962-4bd0-80bd-e919279e97c4 │
+│ Salz   │ 2edbfa93-a590-4dbf-8cc0-3e0e23c5b8d5 │
+└────────┴──────────────────────────────────────┘
+
+ Rezepte:
+┌───────────────────┬───────┬────────────────────────────────┐
+│ Pfannkuchen (neu) │ user1 │ Dessert (neu), Fastfood, Vegan │
+│ Pizza             │ user2 │ Fastfood                       │
+└───────────────────┴───────┴────────────────────────────────┘
+
+ Favoriten:
+(Keine Favoriten)
+
+══════════════════════════════════════════════
+✔ Automatisierte Tests erfolgreich abgeschlossen!
+══════════════════════════════════════════════
+```
+
 
 ### Architekturüberblick
 Die Bibliothek basiert auf einer einfachen Schichtenarchitektur:
