@@ -25,10 +25,20 @@ Beim ersten Start wird im Unterordner `data` eine Reihe von JSON‑Dateien (`use
 ```bash
 # Wiederherstellen von Abhängigkeiten 
 dotnet restore
-
+```
+```bash
 # Projekt kompilieren
 dotnet build
+```
+```bash
+# Methode 1: Manuelles Löschen von Backend/data/
+# Methode 2: Entfernung über die Befehlszeile (Windows PowerShell)
+Remove-Item -Path .\data\*.json -Force
+# Methode 3: Entfernung über die Befehlszeile (CMD)
+del .\data\*.json
+```
 
+```
 # Demoanwendung starten (cd Backend)
 dotnet run --project RecipeConsoleDemo
 ```
