@@ -37,36 +37,55 @@ dotnet run --project RecipeConsoleDemo
 ```bash
 1
 user1
-pass1
+pw1
 1
 user2
-pass2
+pw2
 1
 user3
-pass3
+pw3
 2
 user1
-pass1
+pw1
 1
 Dessert
 1
-Vegetarian
+Vegan
+1
+Fastfood
 2
-Flour
+Zucker
 2
-Sugar
+Mehl
+2
+Milch
+2
+Eier
+2
+Salz
 3
-Cake
-Flour|200g
-Sugar|100g
+Pfannkuchen
+Mehl|200g
+Milch|250ml
+Eier|2 Stück
 
-Mix and bake
+Alles verrühren
+In Pfanne goldbraun backen
+
 Dessert
+3
+Toastbrot
+Salz|1 TL
+Zucker|2 TL
 
+Backen bei 180°C
+
+Vegan
+4
 0
 2
 user2
-pass2
+pw2
 1
 Main
 2
@@ -79,12 +98,12 @@ Oil|10ml
 Salt|5g
 
 Boil and serve
-Main
 
+Main
 0
 2
 user3
-pass3
+pw3
 1
 Snack
 2
@@ -95,8 +114,8 @@ Chocolate|50g
 Sugar|20g
 
 Bake cookies
-Snack
 
+Snack
 14
 user1
 15
