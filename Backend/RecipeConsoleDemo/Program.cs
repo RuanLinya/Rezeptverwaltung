@@ -30,7 +30,7 @@ namespace RecipeConsoleDemo
                     {
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Yellow;
-                        Console.WriteLine("🤖 Starte automatischen Testmodus...\n");
+                        Console.WriteLine("Starte automatischen Testmodus...\n");
                         Console.ResetColor();
 
                         // Invoke the automated testing entry point
@@ -279,7 +279,7 @@ namespace RecipeConsoleDemo
                 Error("Sie haben noch keine Rezepte.");
                 return;
             }
-            PrintHeader($"📜 Rezepte von {user.UserName}");
+            PrintHeader($"Rezepte von {user.UserName}");
             PrintTable(recipes,
                 r => r.Name,
                 r => string.Join(", ", r.CategoryIds.Select(id => _categoryService.GetById(id)?.Name ?? ""))
@@ -302,7 +302,7 @@ namespace RecipeConsoleDemo
                 Error("Keine Rezepte in dieser Kategorie.");
                 return;
             }
-            PrintHeader($"📂 Rezepte in '{category.Name}'");
+            PrintHeader($"Rezepte in '{category.Name}'");
             PrintTable(recipes,
                 r => r.Name,
                 r => _userService.GetById(r.OwnerId)?.UserName ?? "Unbekannt"
@@ -325,7 +325,7 @@ namespace RecipeConsoleDemo
                 Error("Keine Rezepte mit dieser Zutat.");
                 return;
             }
-            PrintHeader($"🥗 Rezepte mit '{ingredient.Name}'");
+            PrintHeader($"Rezepte mit '{ingredient.Name}'");
             PrintTable(recipes,
                 r => r.Name,
                 r => _userService.GetById(r.OwnerId)?.UserName ?? "Unbekannt"
@@ -368,7 +368,7 @@ namespace RecipeConsoleDemo
                 Error("Keine Favoriten gefunden.");
                 return;
             }
-            PrintHeader("⭐ Ihre Favoriten");
+            PrintHeader("Ihre Favoriten");
             PrintTable(favs,
                 r => r.Name,
                 r => _userService.GetById(r.OwnerId)?.UserName ?? "?"
@@ -427,7 +427,7 @@ namespace RecipeConsoleDemo
                 Error($"Keine Rezepte von '{name}'.");
                 return;
             }
-            PrintHeader($"📚 Rezepte von '{name}'");
+            PrintHeader($"Rezepte von '{name}'");
             PrintTable(recipes, r => r.Name, r => r.Id);
         }
 
@@ -439,7 +439,7 @@ namespace RecipeConsoleDemo
                 Error("Keine Zutaten vorhanden.");
                 return;
             }
-            PrintHeader("🥕 Globale Zutatenliste");
+            PrintHeader("Globale Zutatenliste");
             PrintTable(ings, i => i.Name, i => i.Id);
         }
 
