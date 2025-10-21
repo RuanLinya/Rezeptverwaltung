@@ -37,8 +37,7 @@ Remove-Item -Path .\data\*.json -Force
 # Methode 3: Entfernung über die Befehlszeile (CMD)
 del .\data\*.json
 ```
-
-```
+```bash
 # Demoanwendung starten (cd Backend)
 dotnet run --project RecipeConsoleDemo
 ```
@@ -172,7 +171,7 @@ Benutzermenü
 Automatischer Testmodus starten? (J/N): J
 ```
 ##### Ein neues Eingabeskript, AutoTestProgram.cs Dieses Skript enthält die vollständige Eingabesequenz von der Registrierung zweier Benutzer bis zur Erstellung und Speicherung von Rezepten als Favoriten. Sie können es verwenden, um die Funktionalität der Konsolenanwendung automatisch zu demonstrieren.
-Die Anwendung liest alle erforderlichen Eingaben aus der Datei „demo_script.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
+##### Die Anwendung liest alle erforderlichen Eingaben aus der Datei „demo_script.txt“ und gibt den Ausführungsprozess ohne manuelles Eingreifen aus.
 ```bash
 ═══════════════════════════════════════════
   Automatisierte Funktionstests gestartet
