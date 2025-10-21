@@ -25,6 +25,11 @@ namespace RecipeLibrary.Services
         /// <param name="ingredients">Collection of tuples containing the ingredient name and the amount/description.</param>
         /// <param name="steps">List of preparation steps.</param>
         /// <param name="categories">List of category names.</param>
+        /// </summary>
+    
+        /// </summary>
+        /// Creates a new recipe.
+        /// </summary>
         public Recipe Create(Guid ownerId,
                              string name,
                              IEnumerable<(string ingredientName, string amount)> ingredients,
@@ -88,6 +93,9 @@ namespace RecipeLibrary.Services
             _context.SaveChanges();
             return recipe;
         }
+        /// </summary>
+        /// Updates an existing recipe.
+        /// </summary>
         public void Update(Guid recipeId,
                            string newName,
                            IEnumerable<(string ingredientName, string amount)> ingredients,

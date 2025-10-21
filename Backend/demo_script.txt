@@ -1,0 +1,186 @@
+# ============================================================
+# Testablauf für Rezeptverwaltung (Demo)
+# ------------------------------------------------------------
+# Dieses Skript simuliert die komplette Benutzerinteraktion im Konsolenprogramm: Registrierung, Anmeldung, Kategorien,Zutaten, Rezepte, Favoriten und Anzeige-Funktionen.
+# Jede Zahl oder Zeile entspricht einer Benutzereingabe.
+# ============================================================
+
+
+# ─────────────────────────────────────────────
+# HAUPTMENÜ – Benutzerregistrierung
+# ─────────────────────────────────────────────
+
+1
+user1
+pw1          # Erstes Benutzerkonto registrieren
+1
+user2
+pw2          # Zweites Benutzerkonto registrieren
+1
+user3
+pw3          # Drittes Benutzerkonto registrieren
+
+
+# ─────────────────────────────────────────────
+# LOGIN als user1
+# ─────────────────────────────────────────────
+2
+user1
+pw1          # user1 meldet sich an
+
+
+# ─────────────────────────────────────────────
+# KATEGORIEN anlegen (user1)
+# ─────────────────────────────────────────────
+1
+Dessert      # Kategorie: Dessert
+1
+Vegan        # Kategorie: Vegan
+1
+Fastfood     # Kategorie: Fastfood
+
+
+# ─────────────────────────────────────────────
+# ZUTATEN hinzufügen (user1)
+# ─────────────────────────────────────────────
+2
+Zucker       # Zutat: Zucker
+2
+Mehl         # Zutat: Mehl
+2
+Milch        # Zutat: Milch
+2
+Eier         # Zutat: Eier
+2
+Salz         # Zutat: Salz
+
+
+# ─────────────────────────────────────────────
+# REZEPT 1 erstellen – Pfannkuchen
+# ─────────────────────────────────────────────
+3
+Pfannkuchen
+Mehl|200g
+Milch|250ml
+Eier|2 Stück
+
+Alles verrühren
+In Pfanne goldbraun backen
+
+Dessert
+
+# ─────────────────────────────────────────────
+# REZEPT 2 erstellen – Toastbrot
+# ─────────────────────────────────────────────
+3
+Toastbrot
+Salz|1 TL
+Zucker|2 TL
+
+Backen bei 180°C
+
+Vegan
+
+# ─────────────────────────────────────────────
+# Eigene Rezepte anzeigen
+# ─────────────────────────────────────────────
+4
+
+# ─────────────────────────────────────────────
+# Favoriten-Funktion vorbereiten (später)
+# ─────────────────────────────────────────────
+
+0              # user1 meldet sich ab
+
+
+# ─────────────────────────────────────────────
+# LOGIN als user2
+# ─────────────────────────────────────────────
+2
+user2
+pw2
+
+# ─────────────────────────────────────────────
+#  Kategorie & Zutaten
+# ─────────────────────────────────────────────
+
+1
+Main          # Kategorie: Hauptgericht
+2
+Oil           # Zutat: Öl
+2
+Salt          # Zutat: Salz
+
+# ─────────────────────────────────────────────
+# Rezept: Suppe erstellen
+# ─────────────────────────────────────────────
+
+3
+Soup
+Oil|10ml
+Salt|5g
+
+Boil and serve
+
+Main
+
+0              # user2 meldet sich ab
+
+
+# ─────────────────────────────────────────────
+# LOGIN als user3
+# ─────────────────────────────────────────────
+2
+user3
+pw3
+
+# ─────────────────────────────────────────────
+# Kategorie & Zutaten
+# ─────────────────────────────────────────────
+
+1
+Snack         # Kategorie: Snack
+2
+Chocolate     # Zutat: Schokolade
+
+# ─────────────────────────────────────────────
+# Rezept: Cookie erstellen
+# ─────────────────────────────────────────────
+
+3
+Cookie
+Chocolate|50g
+Sugar|20g
+
+Bake cookies
+
+Snack
+
+# ─────────────────────────────────────────────
+# Rezepte eines bestimmten Benutzers anzeigen
+# ─────────────────────────────────────────────
+
+14
+user1          # Zeigt alle Rezepte von user1
+
+# ─────────────────────────────────────────────
+# Alle Zutaten anzeigen
+# ─────────────────────────────────────────────
+15
+
+# ─────────────────────────────────────────────
+#  Favoritenliste anzeigen
+# ─────────────────────────────────────────────
+
+9
+
+# ─────────────────────────────────────────────
+# Abmelden
+# ─────────────────────────────────────────────
+
+0
+
+
+# ============================================================
+# Ende des automatisierten Testablaufs
+# ------------------------------------------------------------

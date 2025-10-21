@@ -1,20 +1,14 @@
 [
   {
-    "Id": "39e1bb51-bd00-4ef8-b46a-f00dc2715461",
+    "Id": "af47a394-8330-4133-b9d3-c999a3a59ca0",
     "UserName": "user1",
-    "Password": "pass1",
+    "Password": "pw1",
     "FavouriteRecipeIds": []
   },
   {
-    "Id": "6e0c2d80-c0fc-422b-b639-7dad7eb24858",
+    "Id": "32b6b781-78cc-4e78-aa3e-b3a657511400",
     "UserName": "user2",
-    "Password": "pass2",
-    "FavouriteRecipeIds": []
-  },
-  {
-    "Id": "0395c87c-9ac2-460b-90f9-d123f9ac0d03",
-    "UserName": "user3",
-    "Password": "pass3",
+    "Password": "pw2",
     "FavouriteRecipeIds": []
   }
 ]

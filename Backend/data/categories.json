@@ -1,78 +1,14 @@
 [
   {
-    "Id": "7a3af1bc-8d84-4c5d-ac8a-255b842460d0",
-    "Name": "Dessert"
+    "Id": "9b943b57-ec95-4662-badf-72e32235c825",
+    "Name": "Dessert (neu)"
   },
   {
-    "Id": "2bf6f98b-8782-4a84-9025-6f00a41a4166",
-    "Name": "Vegetarian"
+    "Id": "33169b4f-5d13-4567-a3d7-c655a7bf26e3",
+    "Name": "Vegan"
   },
   {
-    "Id": "ed74c1d1-492a-4277-9ffd-c06405759538",
-    "Name": "0"
-  },
-  {
-    "Id": "df15311d-2ec7-41ff-a558-d225e8757042",
-    "Name": "2"
-  },
-  {
-    "Id": "fe49c4fa-803d-4d67-ae5a-328f524a252f",
-    "Name": "user2"
-  },
-  {
-    "Id": "5779067a-edbd-4a1e-980c-d3557e7299e8",
-    "Name": "pass2"
-  },
-  {
-    "Id": "d38ea3d0-2df1-47d8-857f-44bc1c393525",
-    "Name": "1"
-  },
-  {
-    "Id": "8c733536-fcea-46ff-96f6-ed01488edb6d",
-    "Name": "Main"
-  },
-  {
-    "Id": "24d3aac0-e947-4d91-8d4d-9bc2b73e0dec",
-    "Name": "Oil"
-  },
-  {
-    "Id": "8d934e56-c2b9-4594-932a-d1b08c655964",
-    "Name": "Salt"
-  },
-  {
-    "Id": "0536f146-fc7e-4b10-b8e8-d349f864952b",
-    "Name": "3"
-  },
-  {
-    "Id": "9bb55ca8-290d-4deb-a61b-dd850cfc2f37",
-    "Name": "Soup"
-  },
-  {
-    "Id": "e0cafc01-f48f-41d4-8644-2879d762d4f1",
-    "Name": "Oil|10ml"
-  },
-  {
-    "Id": "628730ef-97cf-44ba-b55e-a5f2ef55029f",
-    "Name": "Salt|5g"
-  },
-  {
-    "Id": "81af9bf4-904d-42f3-9f2c-6386c1bd2dc5",
-    "Name": "Snack"
-  },
-  {
-    "Id": "15560ae9-a2ac-457f-b550-a60153673b38",
-    "Name": "14"
-  },
-  {
-    "Id": "252d51b4-2173-4a62-bf92-b6c32e38c8b1",
-    "Name": "user1"
-  },
-  {
-    "Id": "2c69cbda-3f47-4a16-bee2-92afd164fb54",
-    "Name": "15"
-  },
-  {
-    "Id": "fca1853b-db16-4f9a-936a-b11fbeccb707",
-    "Name": "9"
+    "Id": "d68939c5-c8af-4606-91a7-2f592f80c5cb",
+    "Name": "Fastfood"
   }
 ]

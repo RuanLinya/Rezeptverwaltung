@@ -7,9 +7,9 @@ using RecipeLibrary.Models;
 namespace RecipeLibrary.Services
 {
     /// <summary>
-    /// Manages a user's favourite recipes.  Favourites are stored as a set of
-    /// recipe identifiers on the User entity.  Only recipes belonging to
-    /// other users can be marked as favourite.
+    /// Manages a user's favourite recipes.  
+    /// Favourites are stored as a set of recipe identifiers on the User entity.  
+    /// Only recipes belonging to other users can be marked as favourite.
     /// </summary>
     public class FavouriteService
     {
@@ -21,9 +21,8 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Marks a recipe as favourite for the given user.  Throws if the
-        /// recipe does not exist, if the user does not exist or if the user
-        /// owns the recipe (you cannot favourite your own recipe).
+        /// Marks a recipe as favourite for the given user.  
+        /// Throws if the recipe does not exist, if the user does not exist or if the user owns the recipe.
         /// </summary>
         public void AddFavourite(Guid userId, Guid recipeId)
         {
@@ -36,9 +35,8 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Removes a recipe from the user's favourites.  Throws if the user
-        /// does not exist.  Silently does nothing if the recipe is not a
-        /// favourite.
+        /// Removes a recipe from the user's favourites.  
+        /// Throws if the user does not exist.  Silently does nothing if the recipe is not a favourite.
         /// </summary>
         public void RemoveFavourite(Guid userId, Guid recipeId)
         {

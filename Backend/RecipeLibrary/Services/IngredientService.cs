@@ -7,8 +7,8 @@ using RecipeLibrary.Models;
 namespace RecipeLibrary.Services
 {
     /// <summary>
-    /// Manages the global list of ingredients.  Ingredients are shared across
-    /// all users and recipes.  Ingredient names must be unique.
+    /// Manages the global list of ingredients.  
+    /// Ingredients are shared across all users and recipes.  Ingredient names must be unique.
     /// </summary>
     public class IngredientService
     {
@@ -20,9 +20,8 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Adds a new ingredient with the specified name.  If an ingredient
-        /// with the same name already exists (case‑insensitive comparison) the
-        /// existing ingredient is returned.  Throws if the name is empty.
+        /// Adds a new ingredient with the specified name.  
+        /// If an ingredient with the same name already exists, the existing ingredient is returned. Throws if the name is empty.
         /// </summary>
         public Ingredient AddOrGet(string name)
         {
@@ -46,8 +45,7 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Retrieves an ingredient by its name (case‑insensitive).  Returns
-        /// null if no such ingredient exists.
+        /// Retrieves an ingredient by its name. Returns null if no such ingredient exists.
         /// </summary>
         public Ingredient? GetByName(string name)
         {
@@ -55,8 +53,7 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Retrieves an ingredient by its identifier.  Returns null if not
-        /// found.
+        /// Retrieves an ingredient by its identifier.  Returns null if not found.
         /// </summary>
         public Ingredient? GetById(Guid id)
         {

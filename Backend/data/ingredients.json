@@ -1,22 +1,22 @@
 [
   {
-    "Id": "dd91a86d-4099-47cc-ba9a-c91aa9779538",
-    "Name": "Flour"
+    "Id": "f42bd94a-af69-43cf-bb59-e06761dcd947",
+    "Name": "Zucker"
   },
   {
-    "Id": "f71b83cb-f235-4fcf-8b0d-7e6450249eb0",
-    "Name": "Sugar"
+    "Id": "062e2b4f-1240-4df5-8dd7-a5f87366207b",
+    "Name": "Mehl"
   },
   {
-    "Id": "687f03f1-59b7-4906-a4a6-570322f58b5a",
-    "Name": "Chocolate"
+    "Id": "bf998cbd-d6e1-409a-8833-3a80f3118fcb",
+    "Name": "Milch"
   },
   {
-    "Id": "ed39f6ad-3862-469b-b1a2-c934a4c963ff",
-    "Name": "Oil"
+    "Id": "66a816ee-5962-4bd0-80bd-e919279e97c4",
+    "Name": "Eier"
   },
   {
-    "Id": "c9f5b8a4-fb03-4098-b3b6-c8a70327aa64",
-    "Name": "Salt"
+    "Id": "2edbfa93-a590-4dbf-8cc0-3e0e23c5b8d5",
+    "Name": "Salz"
   }
 ]

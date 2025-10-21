@@ -6,7 +6,7 @@ using RecipeLibrary.Models;
 namespace RecipeLibrary.Services
 {
     /// <summary>
-    /// Provides functionality to manage users including registration and authentication.  User names are unique across the system.
+    /// Provides functionality to manage users including registration and authentication. User names are unique across the system.
     /// </summary>
     public class UserService
     {

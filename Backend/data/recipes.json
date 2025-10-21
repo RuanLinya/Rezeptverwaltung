@@ -1,85 +1,60 @@
 [
   {
-    "Id": "43b29052-0681-451b-aee4-189a6baa9e62",
-    "Name": "Cake",
-    "OwnerId": "39e1bb51-bd00-4ef8-b46a-f00dc2715461",
+    "Id": "bc543584-6624-4e77-9c64-67dc4c507494",
+    "Name": "Pfannkuchen (neu)",
+    "OwnerId": "af47a394-8330-4133-b9d3-c999a3a59ca0",
     "Steps": [
-      "Mix and bake",
-      "Dessert"
+      "Zutaten pr\u00FCfen",
+      "Schmeckt gut servieren"
     ],
     "Ingredients": [
       {
-        "IngredientId": "dd91a86d-4099-47cc-ba9a-c91aa9779538",
-        "Amount": "200g"
+        "IngredientId": "66a816ee-5962-4bd0-80bd-e919279e97c4",
+        "Amount": "1 St\u00FCck"
       },
       {
-        "IngredientId": "f71b83cb-f235-4fcf-8b0d-7e6450249eb0",
-        "Amount": "100g"
+        "IngredientId": "062e2b4f-1240-4df5-8dd7-a5f87366207b",
+        "Amount": "1 St\u00FCck"
+      },
+      {
+        "IngredientId": "bf998cbd-d6e1-409a-8833-3a80f3118fcb",
+        "Amount": "1 St\u00FCck"
+      },
+      {
+        "IngredientId": "2edbfa93-a590-4dbf-8cc0-3e0e23c5b8d5",
+        "Amount": "1 St\u00FCck"
+      },
+      {
+        "IngredientId": "f42bd94a-af69-43cf-bb59-e06761dcd947",
+        "Amount": "1 St\u00FCck"
       }
     ],
     "CategoryIds": [
-      "ed74c1d1-492a-4277-9ffd-c06405759538",
-      "df15311d-2ec7-41ff-a558-d225e8757042",
-      "fe49c4fa-803d-4d67-ae5a-328f524a252f",
-      "5779067a-edbd-4a1e-980c-d3557e7299e8",
-      "d38ea3d0-2df1-47d8-857f-44bc1c393525",
-      "8c733536-fcea-46ff-96f6-ed01488edb6d",
-      "df15311d-2ec7-41ff-a558-d225e8757042",
-      "24d3aac0-e947-4d91-8d4d-9bc2b73e0dec",
-      "df15311d-2ec7-41ff-a558-d225e8757042",
-      "8d934e56-c2b9-4594-932a-d1b08c655964",
-      "0536f146-fc7e-4b10-b8e8-d349f864952b",
-      "9bb55ca8-290d-4deb-a61b-dd850cfc2f37",
-      "e0cafc01-f48f-41d4-8644-2879d762d4f1",
-      "628730ef-97cf-44ba-b55e-a5f2ef55029f"
+      "9b943b57-ec95-4662-badf-72e32235c825",
+      "d68939c5-c8af-4606-91a7-2f592f80c5cb",
+      "33169b4f-5d13-4567-a3d7-c655a7bf26e3"
     ]
   },
   {
-    "Id": "999fc011-35e6-4a0d-a1a0-37eab6a17734",
-    "Name": "Cookie",
-    "OwnerId": "0395c87c-9ac2-460b-90f9-d123f9ac0d03",
+    "Id": "fc1c1597-a03c-4bcd-8ef7-68335b1ced5f",
+    "Name": "Pizza",
+    "OwnerId": "32b6b781-78cc-4e78-aa3e-b3a657511400",
     "Steps": [
-      "Bake cookies",
-      "Snack"
+      "Kneten",
+      "Backen"
     ],
     "Ingredients": [
       {
-        "IngredientId": "687f03f1-59b7-4906-a4a6-570322f58b5a",
-        "Amount": "50g"
+        "IngredientId": "062e2b4f-1240-4df5-8dd7-a5f87366207b",
+        "Amount": "300g"
       },
       {
-        "IngredientId": "f71b83cb-f235-4fcf-8b0d-7e6450249eb0",
-        "Amount": "20g"
+        "IngredientId": "f42bd94a-af69-43cf-bb59-e06761dcd947",
+        "Amount": "1 TL"
       }
     ],
     "CategoryIds": [
-      "15560ae9-a2ac-457f-b550-a60153673b38",
-      "252d51b4-2173-4a62-bf92-b6c32e38c8b1",
-      "2c69cbda-3f47-4a16-bee2-92afd164fb54",
-      "fca1853b-db16-4f9a-936a-b11fbeccb707",
-      "ed74c1d1-492a-4277-9ffd-c06405759538"
-    ]
-  },
-  {
-    "Id": "43c5aef6-ea3b-48d6-95df-a343075d9352",
-    "Name": "Soup",
-    "OwnerId": "6e0c2d80-c0fc-422b-b639-7dad7eb24858",
-    "Steps": [
-      "Boil and serve",
-      "Main"
-    ],
-    "Ingredients": [
-      {
-        "IngredientId": "ed39f6ad-3862-469b-b1a2-c934a4c963ff",
-        "Amount": "10ml"
-      },
-      {
-        "IngredientId": "c9f5b8a4-fb03-4098-b3b6-c8a70327aa64",
-        "Amount": "5g"
-      }
-    ],
-    "CategoryIds": [
-      "ed74c1d1-492a-4277-9ffd-c06405759538"
+      "d68939c5-c8af-4606-91a7-2f592f80c5cb"
     ]
   }
 ]

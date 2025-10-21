@@ -7,7 +7,7 @@ using RecipeLibrary.Models;
 namespace RecipeLibrary.Services
 {
     /// <summary>
-    /// Provides CRUD operations for categories.  Category names must be unique.
+    /// Provides CRUD operations for categories. Category names must be unique.
     /// A category cannot be deleted if it is referenced by any recipe.
     /// </summary>
     public class CategoryService
@@ -20,14 +20,14 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Creates a new category with the given name.  Throws if the name is
-        /// empty or if a category with the same name already exists.
+        /// Creates a new category with the given name. 
+        /// Throws if the name is empty or if a category with the same name already exists.
         /// </summary>
         public Category Create(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException("Category name must not be empty.", nameof(name));
-            if (_context.Categories.Any(c => string.Equals(c.Name, name, StringComparison.OrdinalIgnoreCase)))
+            if (_context.Categories.Any(c => string.Equals(c.Name, name, StringComparison.OrdinalIgnoreCase))) // Case insensitive check
                 throw new InvalidOperationException($"Category '{name}' already exists.");
 
             var cat = new Category { Id = Guid.NewGuid(), Name = name };
@@ -37,9 +37,8 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Renames the category with the specified identifier.  Throws if
-        /// the category does not exist or if the new name is already in use by
-        /// another category.
+        /// Renames the category with the specified identifier.  
+        /// Throws if the category does not exist or if the new name is already in use by another category.
         /// </summary>
         public void Rename(Guid categoryId, string newName)
         {
@@ -53,8 +52,8 @@ namespace RecipeLibrary.Services
         }
 
         /// <summary>
-        /// Deletes the category with the specified identifier.  Throws if the
-        /// category is used by any recipe or does not exist.
+        /// Deletes the category with the specified identifier.  
+        /// Throws if the category is used by any recipe or does not exist.
         /// </summary>
         public void Delete(Guid categoryId)
         {
