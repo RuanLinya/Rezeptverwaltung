@@ -31,10 +31,11 @@ dotnet restore
 dotnet build
 ```
 ```bash
-# Methode 1: Manuelles Löschen von Backend/data/
-# Methode 2: Entfernung über die Befehlszeile (Windows PowerShell)
+#💡Date löschen
+## Methode 1: Manuelles Löschen von Backend/data/
+## Methode 2: Entfernung über die Befehlszeile (Windows PowerShell)
 Remove-Item -Path .\data\*.json -Force
-# Methode 3: Entfernung über die Befehlszeile (CMD)
+## Methode 3: Entfernung über die Befehlszeile (CMD)
 del .\data\*.json
 ```
 ```bash
