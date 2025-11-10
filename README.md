@@ -339,6 +339,10 @@ Das Projekt demonstriert die wichtigsten Funktionen einer modernen Web-Rezeptver
 ```
 # Abhängigkeiten installieren (cd Frontend)
 ```
+export NODE_OPTIONS=--openssl-legacy-provider
+npm start
+```
+```
 npm install
 ```
 ```
